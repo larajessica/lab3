@@ -8,8 +8,8 @@ exports.view = function(req, res){
   if (nameToShow === undefined) {
     nameToShow = 'World';
   }
-  console.log("Name is" + nameToShow);
-  res.render('index', {
-  	'name': '', nameToShow, "Lara"
+  console.log("Name is " + nameToShow);
+  res.render('index', { 
+  	'name': nameToShow,
   });
 };
