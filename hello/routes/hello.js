@@ -4,9 +4,6 @@
  */
 
 exports.view = function(req, res){
-  res.render('index', {
-    'Lara': '',
-  });
   var nameToShow = req.params.userName;
   if (nameToShow === undefined) {
     nameToShow = 'World';
