@@ -19,7 +19,7 @@ function initializePage() {
 	function projectClick(e) { 
 		e.preventDefault();  
 		$(this).css("background-color", "#7fff00");
-		var containingProject = $(this).closest(".project");
+		$('#img').fadeToggle()
 		var description = $(containingProject).find(".project-description");
 		if (description.length == 0) {
 			$(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
@@ -32,6 +32,7 @@ function initializePage() {
 	function changeText(event) {
 		$(this).tet("Poof");
 	}
+
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 }
