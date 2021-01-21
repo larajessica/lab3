@@ -19,7 +19,7 @@ function initializePage() {
 	function projectClick(e) { 
 		e.preventDefault();  
 		$(this).css("background-color", "#7fff00");
-		$('#img').fadeToggle()
+		$('.img').fadeToggle()
 		var description = $(containingProject).find(".project-description");
 		if (description.length == 0) {
 			$(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
