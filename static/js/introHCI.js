@@ -15,7 +15,7 @@ function initializePage() {
 		$("#testjs").text("Please wait...");
 		$("a.thumbnail").click(projectClick); 
 	});
-
+	console.log("Project clicked")
 	function projectClick(e) { 
 		e.preventDefault();  
 		$(this).css("background-color", "#7fff00");
@@ -26,6 +26,11 @@ function initializePage() {
 		} else {
 		    description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
 		}
+	}
+	
+	$('#paragraph').click(changeText);
+	function changeText(event) {
+		$(this).tet("Poof");
 	}
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
